@@ -1,8 +1,7 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Button } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-// Static mapping of image paths to require statements (optional, if not already used globally)
 const imageMapping = {
   "../assets/first.jpeg": require("../assets/first.jpeg"),
   "../assets/second.jpeg": require("../assets/second.jpeg"),
@@ -11,7 +10,7 @@ const imageMapping = {
 };
 
 const DetailsScreen = ({ route, navigation }) => {
-  const { hostel } = route.params; // Retrieve hostel data passed via navigation
+  const { hostel } = route.params;
 
   return (
     <View style={styles.container}>
@@ -31,6 +30,13 @@ const DetailsScreen = ({ route, navigation }) => {
       <Text style={styles.price}>Price: ₹{hostel.price}</Text>
       <Text style={styles.rating}>Rating: {hostel.rating} / 5</Text>
       <Text style={styles.description}>{hostel.description}</Text>
+      <Text style={styles.location}>location: {hostel.location}</Text>
+      <Text>Ac/Non-Ac: {hostel.ac}</Text>
+      <Text>Wifi: {hostel.wifi}</Text>
+      <Text>Washing Machine: {hostel.washing_machine}</Text>
+      <Text>Power Backup: {hostel.power_backup}</Text>
+      <Text>Security: {hostel.security}</Text>
+      <Text>CCTV: {hostel.cctv}</Text>
     </View>
   );
 };
@@ -64,6 +70,13 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 14,
-    color: "#555",
+    marginBottom: 1,
+  },
+  icon: {
+    color: "#1e1e1e",
+  },
+  location: {
+    fontSize: 14,
+    fontWeight: "semibold",
   },
 });

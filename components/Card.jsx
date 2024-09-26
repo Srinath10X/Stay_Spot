@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native"; // import useNavigation
 
-// Static mapping of image paths to require statements
 const imageMapping = {
   "../assets/first.jpeg": require("../assets/first.jpeg"),
   "../assets/second.jpeg": require("../assets/second.jpeg"),
@@ -12,7 +11,7 @@ const imageMapping = {
 };
 
 const Card = ({ hostel, addToWishlist, removeFromWishlist, isWishlisted }) => {
-  const navigation = useNavigation(); // Hook to use navigation
+  const navigation = useNavigation();
 
   const toggleWishlist = () => {
     if (isWishlisted) {
@@ -40,7 +39,7 @@ const Card = ({ hostel, addToWishlist, removeFromWishlist, isWishlisted }) => {
           <Ionicons
             name="heart"
             size={28}
-            color={isWishlisted ? "red" : "#000"}
+            color={isWishlisted ? "red" : "#FFF"}
             style={styles.heartIcon}
           />
         </TouchableOpacity>

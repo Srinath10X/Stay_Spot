@@ -6,7 +6,15 @@
       "rating": 4.5,
       "area": "Maisammaguda",
       "price": 6500,
-      "image": "../assets/first.jpeg"
+      "image": "../assets/first.jpeg",
+      "description": "Maheswara Hostel offers comfortable and spacious rooms with all essential amenities. Ideal for students and working professionals.",
+      "location": "Maisammaguda, Hyderabad",
+      "ac": "Yes",
+      "wifi": "Available",
+      "washing_machine": "Available",
+      "power_backup": "Yes",
+      "security": "24/7 Security Guard",
+      "cctv": "Yes, covering all floors"
     },
     {
       "id": 2,
@@ -14,7 +22,15 @@
       "rating": 3.8,
       "area": "Maisammaguda",
       "price": 5500,
-      "image": "../assets/second.jpeg"
+      "image": "../assets/second.jpeg",
+      "description": "Shivasai Hostel is a budget-friendly option with clean and hygienic facilities, suitable for students and employees.",
+      "location": "Maisammaguda, Hyderabad",
+      "ac": "No",
+      "wifi": "Available",
+      "washing_machine": "Not Available",
+      "power_backup": "No",
+      "security": "Gated community",
+      "cctv": "No"
     },
     {
       "id": 3,
@@ -22,7 +38,15 @@
       "rating": 4.2,
       "area": "Maisammaguda",
       "price": 5000,
-      "image": "../assets/third.jpeg"
+      "image": "../assets/third.jpeg",
+      "description": "Satya Hostel offers a homely atmosphere with nutritious meals, making it a popular choice for students.",
+      "location": "Maisammaguda, Hyderabad",
+      "ac": "No",
+      "wifi": "Available",
+      "washing_machine": "Available",
+      "power_backup": "Yes",
+      "security": "Electronic entry system",
+      "cctv": "Yes, in common areas"
     },
     {
       "id": 4,
@@ -30,7 +54,15 @@
       "rating": 5,
       "area": "Maisammaguda",
       "price": 5000,
-      "fourth": "../assets/fourth.jpeg"
+      "image": "../assets/fourth.jpeg",
+      "description": "Satyaveni Hostels offers premium amenities, including gym access, 24/7 cafeteria, and private study rooms.",
+      "location": "Maisammaguda, Hyderabad",
+      "ac": "Yes",
+      "wifi": "High-speed internet",
+      "washing_machine": "Available",
+      "power_backup": "Full backup for all rooms",
+      "security": "Biometric entry",
+      "cctv": "Yes, in all rooms and common areas"
     }
   ]
 }
