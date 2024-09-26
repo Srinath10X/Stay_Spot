@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { View, TextInput } from "react-native";
+import { View, Button, TextInput } from "react-native";
 import { Entypo } from "@expo/vector-icons";
 import Card from "../components/Card";
 import { hostels as hstl } from "../api/api.json";
 
-const HomeScreen = ({ addToWishlist, removeFromWishlist, wishlist }) => {
+const HomeScreen = ({
+  navigation,
+  addToWishlist,
+  removeFromWishlist,
+  wishlist,
+}) => {
   const [hostels, setHostels] = useState(hstl);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -51,6 +56,10 @@ const HomeScreen = ({ addToWishlist, removeFromWishlist, wishlist }) => {
           />
         ))}
       </View>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate("Details")}
+      />
     </View>
   );
 };
