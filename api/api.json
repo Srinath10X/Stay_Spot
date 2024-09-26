@@ -1,0 +1,36 @@
+{
+  "hostels": [
+    {
+      "id": 1,
+      "name": "Maheswara Hostel",
+      "rating": 4.5,
+      "area": "Maisammaguda",
+      "price": 6500,
+      "image": "../assets/first.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Shivasai Hostel",
+      "rating": 3.8,
+      "area": "Maisammaguda",
+      "price": 5500,
+      "image": "../assets/second.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Satya Hostel",
+      "rating": 4.2,
+      "area": "Maisammaguda",
+      "price": 5000,
+      "image": "../assets/third.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Satyaveni Hostels",
+      "rating": 5,
+      "area": "Maisammaguda",
+      "price": 5000,
+      "fourth": "../assets/fourth.jpeg"
+    }
+  ]
+}
