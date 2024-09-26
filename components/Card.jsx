@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native"; // import useNavigation
 
 // Static mapping of image paths to require statements
 const imageMapping = {
@@ -11,6 +12,8 @@ const imageMapping = {
 };
 
 const Card = ({ hostel, addToWishlist, removeFromWishlist, isWishlisted }) => {
+  const navigation = useNavigation(); // Hook to use navigation
+
   const toggleWishlist = () => {
     if (isWishlisted) {
       removeFromWishlist(hostel);
@@ -19,8 +22,12 @@ const Card = ({ hostel, addToWishlist, removeFromWishlist, isWishlisted }) => {
     }
   };
 
+  const goToDetails = () => {
+    navigation.navigate("Details", { hostel });
+  };
+
   return (
-    <View style={styles.card}>
+    <TouchableOpacity style={styles.card} onPress={goToDetails}>
       <View style={styles.top}>
         <Image
           source={
@@ -43,7 +50,7 @@ const Card = ({ hostel, addToWishlist, removeFromWishlist, isWishlisted }) => {
         <Text style={styles.priceText}>₹{hostel.price}</Text>
         <Text style={styles.rating}>Rating: {hostel.rating} / 5</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

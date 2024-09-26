@@ -56,10 +56,6 @@ const HomeScreen = ({
           />
         ))}
       </View>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate("Details")}
-      />
     </View>
   );
 };
